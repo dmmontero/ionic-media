@@ -1,0 +1,7 @@
+{
+  "name": "TakePhoto",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
