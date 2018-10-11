@@ -13,8 +13,12 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button (click)="goBack()">back</button>
-  <button ion-button (click)="takePhoto()">Take a photo
+  <P>
+    <button ion-button icon-only icon-end small (click)="goBack()">
+      <ion-icon name="md-close-circle"></ion-icon>
+    </button>
+  </P>
+  <button ion-button round full (click)="takePhoto()">Take a photo
   </button>
 
   <img [src]="myPhoto" *ngIf="myPhoto">

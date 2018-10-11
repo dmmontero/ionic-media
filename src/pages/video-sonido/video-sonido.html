@@ -7,12 +7,20 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>video-sonido</ion-title>
+    <ion-title>Medis Streaming</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <button ion-button (click)="goBack()">back</button>
+  <button ion-button icon-end small icon-only (click)="goBack()">
+    <ion-icon name="md-close-circle"></ion-icon>
+  </button>
+  <ion-list>
+    <button ion-button round full (click)="startVideo()">Start Video</button>
+    <button ion-button round full (click)="startAudio()">Start Audio</button>
+    <button ion-button round full (click)="stopAudio()" color="danger">Stop Audio</button>
+  </ion-list>
+  <p>{{mensaje}}</p>
 </ion-content>

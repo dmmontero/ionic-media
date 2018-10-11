@@ -10,6 +10,7 @@ import { VideoSonidoPage } from './../pages/video-sonido/video-sonido';
 import { PhotoPage } from './../pages/photo/photo';
 
 import { Camera } from '@ionic-native/camera';
+import { StreamingMedia } from '@ionic-native/streaming-media';
 
 @NgModule({
   declarations: [MyApp, HomePage, VideoSonidoPage, PhotoPage],
@@ -20,6 +21,7 @@ import { Camera } from '@ionic-native/camera';
     StatusBar,
     SplashScreen,
     Camera,
+    StreamingMedia,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
