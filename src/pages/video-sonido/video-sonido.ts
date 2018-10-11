@@ -33,7 +33,7 @@ export class VideoSonidoPage {
     let toast = this.toastCtrl.create({
       message: mensaje,
       duration: 3000,
-      position: 'top'
+      position: 'bottom'
     });
 
     toast.onDidDismiss(() => {
@@ -44,12 +44,14 @@ export class VideoSonidoPage {
   }
 
   startVideo() {
+    this.presentToast('Ver video');
     let options: StreamingVideoOptions = {
       successCallback: () => {
+        this.presentToast('Finished Video');
         console.log('Finished Video');
       },
       errorCallback: e => {
-        this.presentToast(e);
+        this.presentToast('Error');
         console.log('Error: ', e);
       },
       orientation: 'portrait'
